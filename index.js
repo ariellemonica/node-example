@@ -1,8 +1,13 @@
 var express = require('express');
 var weather = require('weather-js');
+var path = require('path');
 
 var app = express();
 var port = 3000;
+
+app.get('/index.php', function(req, res) {
+	res.sendFile(path.join(__dirname + '/goober.html'));
+});
 
 app.get('/user/:name', function(req, res) {
 	var name = req.params.name;
@@ -22,7 +27,9 @@ app.get('/weather/:city/:unit', function(req, res) {
 
 		var weatherData = `<h1>The weather in ${city} is ${result[0].current.temperature} degrees ${unit}.`;
 
-		res.send(`<h1>${weatherData}</h1>`);
+		console.log('Yo!');
+
+		res.send(`${weatherData}`);
 	});
 
 	
