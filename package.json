@@ -1,0 +1,28 @@
+{
+  "name": "node-example",
+  "version": "1.0.0",
+  "description": "Just an example app for KAT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diarmuid-murphy/node-example.git"
+  },
+  "keywords": [
+    "example",
+    "node",
+    "KAT"
+  ],
+  "author": "Diarmuid Murphy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diarmuid-murphy/node-example/issues"
+  },
+  "homepage": "https://github.com/diarmuid-murphy/node-example#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "weather-js": "^2.0.0"
+  }
+}
